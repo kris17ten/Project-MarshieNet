@@ -1,0 +1,561 @@
+/* CSS Document */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+body {
+    font: 13px Helvetica, Arial;
+    border-color: black;
+    border-style: dashed;
+    background-color: #e2d1ff88;
+    }
+/*   HEADER   */
+
+/*   ----- 3D navigation bar -----   */
+/* 3d navigation bar (internet ref: https://davidwalsh.name/3d-menu) */
+   
+.blockMenu {
+    display: block;
+    background: black;
+    height: 60px;
+    }
+.li {
+    display: inline-block;
+    padding: 0px 10px;
+    }
+.blockMenu .li div {
+    color: black;
+    display: block;
+    font-family: Waltograph;
+    text-decoration: none;
+    text-align: center;
+    overflow: visible;
+    line-height: 20px;
+    font-size: 26px;
+    padding: 18px 60px 10px 5px;
+    }
+.threeD {
+    perspective: 100px;
+    transition: all .07s linear;
+    position: relative;
+    }
+.threeD:hover .threeDBox,
+.threeD:focus .threeDBox {
+    transform: translateZ(-25px) rotateX(90deg);
+    font-weight: bold;
+    }
+.threeDBox {
+    transition: all .3s ease-out;
+    transform: translatez(-25px);
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+.front {
+    transform: rotatex(0deg) translatez(25px);
+    }
+.back {
+    transform: rotatex(-90deg) translatez(25px);
+    }
+.front, .back {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #70707090;
+    padding: 15px 10px;
+    color: white;
+    box-sizing: border-box;
+    }
+#logout {
+    background-color:black;
+    border:none;
+    display:inline-block;
+    position:relative;
+    top:-55px;
+    }
+#headerBar {
+    text-align: right;
+    }
+#userBar {
+    text-align: left;
+    width: 1150px;
+    height: 60px;
+    padding: 0px 20px 0px 10px;
+    position: relative;
+    top: 0px;
+    }
+#userBar img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    }
+#searchBar {
+    display: inline-block;
+    padding: 0px 50px 5px 100px;
+    position: relative;
+    top: -18px;
+    }
+#search {
+    height: 30px;
+    width: 70px;
+    font-family: Forte;
+    font-size: 15px;
+    position: relative;
+    top: 4px;
+    }
+#inputFields {
+    width: 400px;
+    padding: 5px 20px 5px 5px;
+    font-family: Courier Std;
+    font-size: 15px; 
+    }
+#userBar p {
+    color:white;
+    display:inline-block;
+    font-family: Waltograph;
+    font-size: 32px;
+    padding: 0px 50px 10px 20px;
+    position: relative;
+    top: -10px;
+    width: 300px;
+    }
+.dropbtn {
+    background-color: #000;
+    font-family: Waltograph;
+    color: white;
+    padding: 8px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    width: 200px;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 48px;
+    background-color: #e0e0e0;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+.dropdown-content a {
+    font-family: "Mickey's College";
+    font-size: 18px;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    }
+.dropdown-content button {
+    font-family: "Mickey's College";
+    width: 200px;
+    font-size: 18px;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    }
+.dropdown-content button:hover {
+    background: url("images/birdiefl.gif");
+    font-family: "Mickey's School";
+    cursor: pointer;
+    font-size: 26px;
+    } 
+.dropdown-content a:hover {
+    background: url("images/birdiefl.gif");
+    font-family: "Mickey's School";
+    font-size: 26px;
+    }
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+.dropdown:hover .dropbtn {
+    background: url("images/userHover.jpg");
+    }
+#navigation {
+    text-align: left;
+    font-size: 18px;
+    padding: 0px 0px 20px 0px;
+    }
+    
+/*   ----- Logo/ Header -----   */    
+    
+#logoBar {
+    column-count: 6;
+    height: 130px;
+    background-color: lightBlue;
+    border-bottom: 10px solid #000;
+    }
+#logo {
+    height: 135px;
+    opacity: 0.8;
+    position: absolute;
+    }
+    
+/*   ----- Walking character -----   */    
+#animationX {
+    column-span: 6;
+    position: relative;
+    animation-name: krisney;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+@keyframes krisney {
+    0%   {left: 0px;}
+    100% {left: 1500px;}
+    }
+#krissy1 {
+    height: 120px;
+    position: relative;
+    padding: 60px 0px 0px 0px;
+    }
+
+/*   ----- Form -----   */
+
+#contents {
+    padding: 0px 10px 10px 10px;
+    }
+
+#logoDiv {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    height: 800px;
+    width: 660px;
+    }
+
+#formDiv {
+    position: relative;
+    top: -140px;
+    left: 60px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 600px;
+    border-style: dashed;
+    border-color: #f367ff88;
+    }
+    
+/*   ----- Form -----   */
+
+#loginForm {
+    text-align: center;
+    padding: 10px;
+    height: 280px;
+    border-style: dashed;
+    border-color: #f367ff88;
+    }
+#loginForm h1 {
+    font-family: Top Secret;
+    font-weight: bold;
+    font-size: 60px;
+    }
+#regForm {
+    text-align: center;
+    padding: 10px;
+    height: 480px;
+    border-style: dashed;
+    border-color: #f367ff88;
+    }
+#regForm h1 {
+    font-family: Top Secret;
+    font-weight: bold;
+    font-size: 60px;
+    }
+
+h1 {
+    font-family: Mona Shark;
+    font-weight: normal;
+    font-size: 40px;
+    }
+p {
+    font-family: Lucida Calligraphy;
+    }
+#reg {
+    padding: 10px;
+    }
+
+/*   ----- Table with form -----   */
+#arrangeElements {
+    text-align: center;
+    position: relative;
+    left: 50px;
+    }
+#data {
+    font-family: Lucida Calligraphy;
+    padding: 20px 50px;
+    }
+.inputFields {
+    width: 200px;
+    padding: 5px 20px 5px 5px;
+    font-family: Courier Std;
+    font-size: 15px;
+    }
+    
+/*   ----- Buttons -----   */
+.submit {
+    height: 40px;
+    width: 70px;
+    font-family: Forte;
+    font-size: 20px;
+    position: relative;
+    right: -210px;
+    }
+.clear {
+    height: 40px;
+    width: 70px;
+    font-family: Forte;
+    font-size: 20px;
+    position: relative;
+    right: -210px;
+    }
+
+/*   ----- User detials on sidebar -----   */
+
+#sidebar {
+    width: 310px;
+    height: 1070px;
+    position: absolute;
+    display: inline-block;
+    padding: 30px 5px 5px 5px;
+    }
+#userDetails {
+    width: 310px;
+    height: 535px;
+    float: left;
+    padding: 30px 5px 15px 5px;
+    background: url(images/userBack.jpg);
+    }
+#userAvatar {
+    width: 200px;
+    position: relative;
+    padding: 5px 0px 20px 0px;
+    }
+#sidebar h1 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    }
+#sidebar p {
+    font-family: Roughtypewriter;
+    font-size: 25px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    color: white;
+    }
+#quote {
+    width: 310px;
+    height: 535px;
+    float: left;
+    padding: 30px 5px 5px 5px;
+    background: url(images/userBack.jpg);
+    }
+#quote h1 {
+    padding: 20px;
+    text-align: center;
+    }
+#quote p {
+    font-size: 50px;
+    padding: 0px 16px 0px 16px;
+    }
+#quote #quoteText {
+    font-family: Roughtypewriter;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    }
+/*   ----- Post here stuff -----   */
+
+#helloUser {
+    width: 800px;
+    height: 80px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    font-family: Waltograph;
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    }
+#postHereDiv {
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    height: 280px;
+    width: 800px;
+    background-color: #a0a0a070;
+    }
+#choice {
+    padding: 10px;
+    text-align: left;
+    border-bottom: double;
+    }
+#choice p {
+    padding: 0px 0px 0px 30px;
+    width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Courier New;
+    display: inline-block;
+    }
+.contentType {
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    }
+.contentType:hover {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    }
+#contentMessage {
+    padding: 5px 5px 5px 5px;
+    width: 700px;
+    height: 140px;
+    max-width: 700px;
+    max-height: 140px;
+    font-size: 26px;
+    }
+#imageDiv {
+    height: 115px;
+    }
+#image {
+    padding: 5px 5px 5px 5px;
+    width: 700px;
+    height: 30px;
+    font-size: 16px;
+    font-family: Courier New;
+    }
+#imagePreview {
+    padding: 2px;
+    height: 110px;
+    }
+#postButton {
+    padding: 15px 40px 0px 0px;
+    text-align: right;
+    }
+#postButton p {
+    display: inline-block;
+    }
+
+/*   ----- Post stuff -----   */
+
+#postWall {
+    display: inline-block;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    left: 350px;
+    }
+.emptyDiv {
+    height: 20px;
+    }
+.postDiv {
+    background: url("images/postBG.png");
+    width: 800px;
+    height: 500px;
+    padding: 20px 35px 20px 35px;
+    text-align: left;
+    }
+.postDiv .avatar {
+    width:90px;
+    height:90px;
+    display:inline-block;
+    }
+.postDiv .postText {
+    display: inline-block;
+    padding: 20px 0px 0px 20px;
+    position: absolute;
+    }
+.postText .user {
+    font-size: 30px;
+    font-family: Waltograph;
+    position: relative;
+    top: -20px;
+    }
+.postText .date {
+    font-size: 15px;
+    font-family: Courier New;
+    position: relative;
+    top: -25px;
+    }
+.postContent {
+    width: 617px;
+    height: 370px;
+    text-align: center;
+    position: relative;
+    left: 54px;
+    padding: 10px 10px 10px 10px;
+    }
+.postContent p {
+    height: 350px;
+    text-align: justify;
+    padding: 10px 20px 10px 20px;
+    font-size: 34px;
+    word-wrap: break-word;
+    }
+.postContent img {
+    height: 350px;
+    }
+
+/*   ----- Search Results -----   */
+#searchResultsTable {
+    width: 1200px;
+    }
+#searchResults .user {
+    width: 400px;
+    height: 50px;
+    font-size: 24px;
+    font-family:Lucida Calligraphy;
+    }
+#searchResults .postList {
+    width: 800px;
+    height: 50px;
+    font-size: 18px;
+    font-family:Lucida Calligraphy;
+    }
+#searchResults td p {
+    display: inline-block;
+    text-align: right;
+    width: 250px;
+    padding: 0px 0px 0px 25px;
+    }
+#searchResults td .cont {
+    display: inline-block;
+    text-align: left;
+    width: 350px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+.blankRow td {
+    width: 800px;
+    height: 1px;
+    background-color: black;
+    }    
+/*   ----- Footer -----   */     
+    
+#footer {
+    clear: both;
+    text-align: center;
+    font-size: 12px;
+    background-color: #00f0f0;
+    }
