@@ -28,8 +28,8 @@ app.get('/check', function (req, res) {
   //Create a connection object with the user details
     var con = mysql.createConnection({
       host: "localhost",
-      user: "krys17",
-      password: "Kristen",
+      user: "",
+      password: "",
       database: "marshienet"
     });
   //Connect to the database
